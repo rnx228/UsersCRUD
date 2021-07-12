@@ -4,15 +4,11 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class GetUser<User> {
+public class GetUser {
     @SerializedName("data")
     List<User> data;
     @SerializedName("total")
     String total;
-
-    public String getTotal() {
-        return total;
-    }
 
     public List<User> getData() {
         return data;
@@ -20,6 +16,10 @@ public class GetUser<User> {
 
     public void setData(List<User> data) {
         this.data = data;
+    }
+
+    public String getTotal() {
+        return total;
     }
 
     public void setTotal(String total) {
